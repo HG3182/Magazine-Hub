@@ -1,25 +1,177 @@
-<div class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen">
-  <!-- Navigation -->
-  <nav class="bg-white shadow-md sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between h-16 items-center">
-        <div class="flex items-center">
-          <a href="#" class="text-2xl font-bold text-gray-900">
-            Magazine Hub
+<div class="bg-gray-100 min-h-screen">
+
+  <!-- top navbar -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav class="bg-gray-100 text-gray-500 p-4">
+      <div class="container mx-auto flex flex-wrap justify-between items-center">
+        <!-- Navigation Links -->
+        <ul class="w-full md:w-auto flex flex-wrap justify-center md:justify-start space-x-6 text-sm mb-2 md:mb-0">
+          <li><a href="#" class="hover:text-gray-400">Home</a></li>
+          <li><a href="#" class="hover:text-gray-400">Advertisement</a></li>
+          <li><a href="#" class="hover:text-gray-400">News</a></li>
+          <li><a href="#" class="hover:text-gray-400">Contact</a></li>
+        </ul>
+  
+        <!-- Social Icons -->
+        <div class="w-full md:w-auto flex justify-center md:justify-start space-x-4">
+          <a href="#" class="hover:text-gray-400">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07C2 17.1 5.66 21.19 10.44 22v-7h-3v-3h3v-2c0-3.07 1.68-4.5 4.32-4.5 1.25 0 2.56.23 2.56.23v2.77h-1.44c-1.42 0-1.88.88-1.88 1.78v1.72h3.18l-.5 3h-2.68v7c4.78-.81 8.44-4.9 8.44-9.93z"/></svg>
+          </a>
+  
+          <a href="#" class="hover:text-gray-400">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.84 3.88 8.84 8.68 9.76v-6.91H8.34v-2.85h2.34V9.62c0-2.31 1.4-3.57 3.47-3.57.99 0 2.02.18 2.02.18v2.2h-1.13c-1.11 0-1.46.7-1.46 1.41v1.69h2.77l-.44 2.85h-2.33v6.91C18.12 20.84 22 16.84 22 12c0-5.52-4.48-10-10-10z"/></svg>
+          </a>
+  
+          <a href="#" class="hover:text-gray-400">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23 3a10.66 10.66 0 01-2.83.78 4.91 4.91 0 002.17-2.72c-.94.56-1.98.96-3.08 1.17A4.89 4.89 0 0016.07 2c-2.7 0-4.88 2.2-4.88 4.9 0 .38.04.75.12 1.11-4.07-.2-7.69-2.15-10.1-5.1a4.86 4.86 0 00-.66 2.47c0 1.7.87 3.2 2.2 4.08a4.9 4.9 0 01-2.21-.62v.06c0 2.38 1.68 4.36 3.92 4.8a4.87 4.87 0 01-2.2.08 4.9 4.9 0 004.56 3.38A9.86 9.86 0 012 19.9a13.91 13.91 0 007.55 2.22c9.06 0 14.02-7.53 14.02-14.05v-.63A10.05 10.05 0 0023 3z"/></svg>
           </a>
         </div>
-        <div class="hidden md:flex space-x-4">
-          <a href="#" class="text-gray-700 hover:text-indigo-600 transition">Home</a>
-          <a href="#" class="text-gray-700 hover:text-indigo-600 transition">Magazines</a>
-          <a href="#" class="text-gray-700 hover:text-indigo-600 transition">Subscribe</a>
-          <a href="#" class="text-gray-700 hover:text-indigo-600 transition">Contact</a>
+      </div>
+    </nav>
+  </div>
+  
+  
+<hr class="border-t border-gray-200">
+  <!-- banner -->
+  <section class="w-full bg-white text-black">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left">
+  
+      <!-- Left Side - Logo -->
+      <div class="w-full md:w-1/2 flex justify-center p-4">
+        <h1 class="text-3xl font-bold">Magazine Hub</h1>
+      </div>
+  
+      <!-- Right Side - Ad Section (Moves below on small screens) -->
+      <div class="w-full md:w-1/2 flex justify-center p-4">
+        <div class="bg-gray-100 p-4 rounded-lg shadow-lg w-[80%] text-gray-900">
+          <h2 class="text-lg font-bold">Advertise Here</h2>
+          <p class="text-sm mt-2">Your ad can be displayed here. Contact us for details.</p>
+          <button class="mt-3 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg">
+            Contact Us
+          </button>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+  <hr class="border-t border-gray-200">
+
+  <!-- Navigation -->
+  <nav class="bg-[#02150e] text-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+  
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button 
+            (click)="toggleMobileMenu()"
+            class="text-white hover:text-gray-300 focus:outline-none"
+          >
+            <svg *ngIf="!isMobileMenuOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg *ngIf="isMobileMenuOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+  
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex flex-1 items-center justify-between">
+          <div class="flex space-x-4">
+            <div *ngFor="let item of menuItems" class="relative group">
+              <button class="flex items-center space-x-1 px-4 py-2  text-white group-hover:bg-yellow-500 group-hover:text-[#122503] active:bg-green-600 transition-all duration-200 ease-in-out">
+                <span class="font-medium">{{ item.name }}</span>
+                <svg *ngIf="item.hasSubmenu" xmlns="http://www.w3.org/2000/svg" 
+                     class="h-4 w-4 transform group-hover:rotate-180 transition-transform duration-200" 
+                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <!-- Submenu with enhanced styling -->
+              <div *ngIf="item.hasSubmenu" 
+                   class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-xl opacity-0 invisible 
+                          group-hover:opacity-100 group-hover:visible transition-all duration-200 
+                          transform group-hover:translate-y-0 translate-y-1 z-50">
+                <div class="py-1">
+                  <a *ngFor="let subItem of item.submenuItems" 
+                     href="#" 
+                     class="block px-4 py-2 text-sm text-gray-700 hover:bg-yellow-500 hover:text-[#122503] 
+                            active:bg-green-600 transition-colors duration-150">
+                    {{ subItem }}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Search Button with enhanced hover effect -->
+          <div class="relative">
+            <button
+              (click)="toggleSearch()"
+              class="p-2 text-white hover:bg-yellow-500 hover:text-[#122503] rounded-full 
+                     transition-all duration-200 ease-in-out"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
+            <!-- Enhanced Search Overlay -->
+            <div *ngIf="isSearchOpen" 
+                 class="absolute right-0 mt-2 w-72 bg-white rounded-lg shadow-xl p-4 z-50 
+                        transform transition-all duration-200 ease-in-out">
+              <div class="relative">
+                <input
+                  type="search"
+                  placeholder="Search..."
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg 
+                         focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 
+                         transition-all duration-200"
+                />
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 absolute right-3 top-2.5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Enhanced Mobile Menu -->
+      <div *ngIf="isMobileMenuOpen" 
+           class="md:hidden py-4 space-y-1">
+        <div *ngFor="let item of menuItems" class="block">
+          <button class="w-full text-left px-4 py-2 text-white hover:bg-yellow-500 
+                         hover:text-[#122503] rounded-md transition-all duration-200 
+                         flex items-center justify-between">
+            <span>{{ item.name }}</span>
+            <svg *ngIf="item.hasSubmenu" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+        </div>
+        <div class="mt-4 px-4">
+          <div class="relative">
+            <input
+              type="search"
+              placeholder="Search..."
+              class="w-full px-4 py-2 bg-[#1a3505] border border-gray-600 rounded-lg 
+                     text-white placeholder-gray-400 focus:outline-none focus:ring-2 
+                     focus:ring-yellow-500 focus:border-yellow-500 transition-all duration-200"
+            />
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 absolute right-3 top-2.5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
         </div>
       </div>
     </div>
   </nav>
+  
 
   <!-- Hero Section -->
-  <header class="relative bg-cover bg-center h-[600px] flex items-center justify-center text-white"
+  <!-- <header class="relative bg-cover bg-center h-[600px] flex items-center justify-center text-white"
     style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/img/view-luxurious-hotel-interior-space.jpg');">
     <div class="text-center max-w-2xl px-4">
       <h1 class="text-5xl font-extrabold mb-6 leading-tight">Discover Inspiring Stories and Insights</h1>
@@ -33,9 +185,100 @@
         </button>
       </div>
     </div>
-  </header>
+  </header> -->
 
-  <section class="max-w-7xl mx-auto px-4 py-12">
+
+  <div class="container mx-auto p-4">
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+      <!-- Left Column - Large Image -->
+      <div class="group h-[576px] relative overflow-hidden shadow-lg">
+        <img 
+          src="../assets/img/athlete-standing-all-weather-running-track.jpg" 
+          alt="Image 1" 
+          class="w-full h-full object-cover transform transition-all duration-500 group-hover:scale-110" 
+        />
+        <!-- Overlay with gradient -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <!-- Content -->
+        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+          <h3 class="text-white font-bold text-2xl mb-2">Sports & Fitness</h3>
+          <p class="text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Discover the latest trends in sports and fitness
+          </p>
+        </div>
+      </div>
+  
+      <!-- Right Column - Grid of Smaller Images -->
+      <div class="grid grid-cols-2">
+        <!-- Image 2 -->
+        <div class="group h-72  relative overflow-hidden shadow-lg">
+          <img 
+            src="../assets/img/guy-shows-document-girl-group-young-freelancers-office-have-conversation-working.jpg" 
+            alt="Image 2" 
+            class="w-full h-full object-cover transform transition-all duration-500 group-hover:scale-110" 
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+            <h3 class="text-white font-bold text-lg mb-1">Business</h3>
+            <p class="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Modern workplace insights
+            </p>
+          </div>
+        </div>
+  
+        <!-- Image 3 -->
+        <div class="group h-72  relative overflow-hidden shadow-lg">
+          <img 
+            src="../assets/img/young-teen-woman-sunglasses-hat-holding-shopping-bags-her-hands-feeling-so-happiness-isolated-green-wall.jpg" 
+            alt="Image 3" 
+            class="w-full h-full object-cover transform transition-all duration-500 group-hover:scale-110" 
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+            <h3 class="text-white font-bold text-lg mb-1">Fashion</h3>
+            <p class="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Latest fashion trends
+            </p>
+          </div>
+        </div>
+  
+        <!-- Image 4 -->
+        <div class="group h-72  relative overflow-hidden shadow-lg">
+          <img 
+            src="../assets/img/ai-nuclear-energy-background-future-innovation-disruptive-technology_53876-129783.avif" 
+            alt="Image 4" 
+            class="w-full h-full object-cover transform transition-all duration-500 group-hover:scale-110" 
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+            <h3 class="text-white font-bold text-lg mb-1">Technology</h3>
+            <p class="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Future innovations
+            </p>
+          </div>
+        </div>
+  
+        <!-- Image 5 -->
+        <div class="group h-72  relative overflow-hidden shadow-lg">
+          <img 
+            src="../assets/img/set-up-studio-shoot_53876-144951.avif" 
+            alt="Image 5" 
+            class="w-full h-full object-cover transform transition-all duration-500 group-hover:scale-110" 
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+            <h3 class="text-white font-bold text-lg mb-1">Photography</h3>
+            <p class="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Professional techniques
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- <section class="max-w-7xl mx-auto px-4 py-12">
     <h2 class="text-3xl font-bold text-center mb-8">Featured Articles</h2>
     <div class="relative w-full overflow-hidden">
       <div class="grid md:grid-cols-3 gap-8">
@@ -49,58 +292,161 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <!-- Magazine Categories -->
-  <section class="max-w-7xl mx-auto px-4 py-8">
-    <div class="mb-8 grid grid-cols-2 gap-4 sm:flex sm:justify-center sm:space-x-4">
-      <button 
-        *ngFor="let category of categories" 
-        (click)="selectedCategory = category"
-        class="px-4 py-2 rounded-full transition duration-300 ease-in-out text-center"
-        [ngClass]="{
-          'bg-indigo-600 text-white': selectedCategory === category,
-          'bg-gray-200 text-gray-700 hover:bg-gray-300': selectedCategory !== category
-        }"
-      >
-        {{ category }}
-      </button>
-    </div>
-    
-
-    <!-- Magazine Grid -->
-    <div class="grid md:grid-cols-4 gap-8">
-      <div 
-        *ngFor="let magazine of filterMagazines()" 
-        class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:-translate-y-2 hover:shadow-xl"
-      >
-        <img 
-          [src]="magazine.image" 
-          [alt]="magazine.title" 
-          class="w-full h-auto object-cover"
-        >
-        <div class="p-6">
-          <span class="text-sm text-indigo-600 font-semibold mb-2 block">
-            {{ magazine.category }}
-          </span>
-          <h3 class="text-xl font-bold text-gray-900 mb-3">
-            {{ magazine.title }}
-          </h3>
-          <p class="text-gray-600 mb-4">
-            {{ magazine.description }}
-          </p>
-          <div class="flex justify-between items-center">
-            <span class="text-sm text-gray-500">
-              {{ magazine.date }}
-            </span>
-            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-semibold">
-              Read More
-            </a>
+  <div class="container mx-auto p-4">
+    <div class="grid grid-cols-1 lg:grid-cols-[70%_30%] gap-6">
+      
+      <!-- Left Content Section (60%) -->
+      <div class="group h-auto relative overflow-hidden shadow-lg bg-gray-100 p-6 rounded-lg">
+        
+        <!-- Blog Categories Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Lifestyle Column -->
+          <div class="col-span-1">
+            <div class="relative">
+              <img src="https://images.unsplash.com/photo-1726064855757-ac8720008fe0?q=80&w=2070&auto=format&fit=crop" 
+                   alt="Lifestyle Image" class="w-full h-64 object-cover rounded-lg">
+              <div class="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black via-transparent to-transparent text-white">
+                <span class="bg-blue-500 text-xs px-2 py-1 rounded">LIFESTYLE</span>
+                <h2 class="text-lg font-bold">Cursus Commodo Cras Egestas</h2>
+                <p class="text-sm">24 Jan 2015 / John Doe / 0 Comments</p>
+              </div>
+            </div>
+  
+            <!-- Lifestyle Posts -->
+            <div class="mt-4 space-y-4">
+              <div class="flex gap-4 border-b pb-3" *ngFor="let post of getPostsByCategory('lifestyle')">
+                <img [src]="post.imageUrl" alt="Post" class="w-24 h-16 object-cover rounded-lg">
+                <div>
+                  <h3 class="font-semibold text-gray-800">{{ post.title }}</h3>
+                  <p class="text-xs text-gray-500">{{ post.date }} / {{ post.author }} / {{ post.comments }} Comments</p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Fashion Column -->
+          <div class="col-span-1">
+            <div class="relative">
+              <img src="https://images.unsplash.com/photo-1740031904427-ca6713523372?q=80&w=2070&auto=format&fit=crop" 
+                   alt="Fashion Image" class="w-full h-64 object-cover rounded-lg">
+              <div class="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black via-transparent to-transparent text-white">
+                <span class="bg-pink-500 text-xs px-2 py-1 rounded">FASHION</span>
+                <h2 class="text-lg font-bold">Cras Nullam Commodo Parturient</h2>
+                <p class="text-sm">24 Jan 2015 / John Doe / 0 Comments</p>
+              </div>
+            </div>
+  
+            <!-- Fashion Posts -->
+            <div class="mt-4 space-y-4">
+              <div class="flex gap-4 border-b pb-3" *ngFor="let post of getPostsByCategory('fashion')">
+                <img [src]="post.imageUrl" alt="Post" class="w-24 h-16 object-cover rounded-lg">
+                <div>
+                  <h3 class="font-semibold text-gray-800">{{ post.title }}</h3>
+                  <p class="text-xs text-gray-500">{{ post.date }} / {{ post.author }} / {{ post.comments }} Comments</p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+        <!-- Photography Section -->
+        <div class="mt-8">
+          <div class="border-t-4 border-red-500 py-3 text-center text-gray-700 font-semibold uppercase">
+            Photography
+          </div>
+          
+          <div class="md:flex gap-6 mt-4">
+            <!-- Main Photography Post (Smaller) -->
+            <div class="bg-white p-3 shadow-md rounded-lg w-full md:w-1/2">
+              <img src="https://images.unsplash.com/photo-1717501218037-2a88e2cbd2f6?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                   alt="Photography" 
+                   class="w-full h-auto object-cover rounded-lg">
+              <h2 class="text-lg font-bold mt-2">Adipiscing Cras Tellus Euismod Ornare</h2>
+          
+              <!-- Star Ratings -->
+              <div class="flex text-yellow-400 mt-1">
+                ⭐ ⭐ ⭐ ⭐ ⭐
+              </div>
+          
+              <p class="text-xs text-gray-500 mt-1">24 Jan 2015 / John Doe / 0 Comments</p>
+          
+              <p class="mt-2 text-gray-600 text-sm">
+                Duis mollis, est non commodo luctus, nisi erat porttitor ligula...
+              </p>
+          
+              <a href="#" class="text-sm text-blue-500 font-semibold mt-3 block">READ MORE →</a>
+            </div>
+          
+            <!-- Side Photography Posts -->
+            <div class="w-full md:w-1/2 space-y-4">
+              <div class="flex gap-4 items-center border-b pb-3" *ngFor="let post of photographyPosts">
+                <img [src]="post.imageUrl" alt="Post" class="w-20 h-16 object-cover rounded-lg">
+                <div>
+                  <h3 class="font-semibold text-gray-800">{{ post.title }}</h3>
+                  <p class="text-xs text-gray-500">{{ post.date }} / {{ post.author }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+  
+      </div>
+  
+      <!-- Right Sidebar Section (40%) -->
+      <div class="group h-auto relative overflow-hidden shadow-lg bg-gray-50 p-6 rounded-lg">
+        
+        <!-- Sidebar Advertisement -->
+        <div class="border p-4 text-center rounded-lg shadow-sm">
+          <h3 class="text-xl font-bold text-yellow-500">URBANMAG</h3>
+          <p class="text-gray-500">Magazine WordPress Theme</p>
+          <img src="https://source.unsplash.com/300x200/?advertisement" 
+               alt="Ad Banner" class="w-full mt-2 rounded-lg">
+        </div>
+  
+        <!-- Popular Posts -->
+        <div class="mt-6">
+          <h3 class="text-lg font-bold border-b-2 pb-2">Popular Posts</h3>
+          <div class="flex gap-4 mt-4 border-b pb-3" *ngFor="let post of trendingPosts">
+            <img [src]="post.imageUrl" alt="Popular Post" class="w-16 h-12 object-cover rounded-lg">
+            <div>
+              <h3 class="text-sm font-semibold text-gray-800">{{ post.title }}</h3>
+              <p class="text-xs text-gray-500">{{ post.comments }} Comments / {{ post.date }}</p>
+            </div>
           </div>
         </div>
+
+        <div class="mt-6 bg-black text-yellow-400 text-center py-2 font-semibold uppercase">
+          Post Slider Widget
+        </div>
+        <div class="bg-white shadow-md p-4">
+          <img src="assets/images/main-image.jpg" class="w-full h-40 object-cover rounded">
+          <h2 class="text-lg font-bold text-center mt-2">Adipiscing Cras Tellus Euismod Ornare</h2>
+        </div>
+  
+        <!-- Social Media Stats -->
+        <div class="mt-4 space-y-2">
+          <div class="flex items-center justify-between bg-blue-600 text-white px-4 py-2 rounded">
+            <span>1,787 Fans</span>
+            <span>→</span>
+          </div>
+          <div class="flex items-center justify-between bg-red-500 text-white px-4 py-2 rounded">
+            <span>3,000 Subscribers</span>
+            <span>→</span>
+          </div>
+        </div>
+  
       </div>
+  
     </div>
-  </section>
+  </div>
+  
+  
 
   <section class="bg-gray-900 text-white py-16">
     <div class="max-w-7xl mx-auto px-4">

@@ -173,4 +173,76 @@ export class AppComponent {
       author: 'John Doe',
     }
   ];
+
+
+
+  currentIndex = 0;
+  slideWidth = 50; // 100% divided by 4 slides for desktop
+
+  slides = [
+    {
+      img: 'https://images.unsplash.com/photo-1491720731493-223f97d92c21?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fF9oYi1kbDRRLTRVfHxlbnwwfHx8fHw%3D',
+      text: 'Sit Porta Vulputate Ultricies Quam1'
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1484452330304-377cdeb05340?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQ0fF9oYi1kbDRRLTRVfHxlbnwwfHx8fHw%3D',
+      text: 'Tellus Risus Lorem Ligula2'
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1562776930-f2a2492c9c8f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQ2fF9oYi1kbDRRLTRVfHxlbnwwfHx8fHw%3D',
+      text: 'Aenean Justo Fringilla Parturient3'
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1578747763484-51b21a33e4fa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDUwfF9oYi1kbDRRLTRVfHxlbnwwfHx8fHw%3D',
+      text: 'Ipsum Malesuada Egestas Amet4'
+    },
+    {
+      img: 'https://plus.unsplash.com/premium_photo-1736600242150-4ea1d5cb3a64?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDUyfF9oYi1kbDRRLTRVfHxlbnwwfHx8fHw%3D',
+      text: 'Sit Porta Vulputate Ultricies Quam5'
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1617972882594-b1b094574749?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDYxfF9oYi1kbDRRLTRVfHxlbnwwfHx8fHw%3D',
+      text: 'Tellus Risus Lorem Ligula6'
+    }
+  ];
+
+  constructor() {
+    // Update slide width based on screen size
+    this.updateSlideWidth();
+    window.addEventListener('resize', () => this.updateSlideWidth());
+  }
+
+  ngOnInit(): void {}
+
+  updateSlideWidth(): void {
+    if (window.innerWidth < 640) {
+      this.slideWidth = 100; // 1 slide on mobile
+    } else if (window.innerWidth < 1024) {
+      this.slideWidth = 50; // 2 slides on tablet
+    } else {
+      this.slideWidth = 30; // 4 slides on desktop
+    }
+  }
+
+  nextSlide() {
+    if (this.currentIndex < this.slides.length - 1) {
+      this.currentIndex++;
+    } else {
+      this.currentIndex = 0;  // Loop back to first slide
+    }
+  }
+  
+  previousSlide() {
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+    } else {
+      this.currentIndex = this.slides.length - 1;  // Loop back to last slide
+    }
+  }
+  
+
+  ngOnDestroy(): void {
+    window.removeEventListener('resize', () => this.updateSlideWidth());
+  }
+  
 }

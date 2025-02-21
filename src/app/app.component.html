@@ -43,10 +43,10 @@
   
       <!-- Right Side - Ad Section (Moves below on small screens) -->
       <div class="w-full md:w-1/2 flex justify-center p-4">
-        <div class="bg-gray-100 p-4 rounded-lg shadow-lg w-[80%] text-gray-900">
+        <div class="bg-gray-100 p-4  shadow-lg w-[80%] text-gray-900">
           <h2 class="text-lg font-bold">Advertise Here</h2>
           <p class="text-sm mt-2">Your ad can be displayed here. Contact us for details.</p>
-          <button class="mt-3 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg">
+          <button class="mt-3 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 ">
             Contact Us
           </button>
         </div>
@@ -119,13 +119,13 @@
             </button>
             <!-- Enhanced Search Overlay -->
             <div *ngIf="isSearchOpen" 
-                 class="absolute right-0 mt-2 w-72 bg-white rounded-lg shadow-xl p-4 z-50 
+                 class="absolute right-0 mt-2 w-72 bg-white  shadow-xl p-4 z-50 
                         transform transition-all duration-200 ease-in-out">
               <div class="relative">
                 <input
                   type="search"
                   placeholder="Search..."
-                  class="w-full px-4 py-2 border border-gray-300 rounded-lg 
+                  class="w-full px-4 py-2 border border-gray-300  
                          focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-yellow-500 
                          transition-all duration-200"
                 />
@@ -156,7 +156,7 @@
             <input
               type="search"
               placeholder="Search..."
-              class="w-full px-4 py-2 bg-[#1a3505] border border-gray-600 rounded-lg 
+              class="w-full px-4 py-2 bg-[#1a3505] border border-gray-600  
                      text-white placeholder-gray-400 focus:outline-none focus:ring-2 
                      focus:ring-yellow-500 focus:border-yellow-500 transition-all duration-200"
             />
@@ -169,24 +169,6 @@
     </div>
   </nav>
   
-
-  <!-- Hero Section -->
-  <!-- <header class="relative bg-cover bg-center h-[600px] flex items-center justify-center text-white"
-    style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/img/view-luxurious-hotel-interior-space.jpg');">
-    <div class="text-center max-w-2xl px-4">
-      <h1 class="text-5xl font-extrabold mb-6 leading-tight">Discover Inspiring Stories and Insights</h1>
-      <p class="text-xl mb-8 opacity-90">Explore curated magazines across business, technology, and lifestyle</p>
-      <div class="flex justify-center space-x-4">
-        <button class="bg-white text-indigo-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
-          Browse Magazines
-        </button>
-        <button class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-indigo-700 transition">
-          Subscribe Now
-        </button>
-      </div>
-    </div>
-  </header> -->
-
 
   <div class="container mx-auto p-4">
     <div class="grid grid-cols-1 lg:grid-cols-2">
@@ -277,37 +259,22 @@
     </div>
   </div>
   
-  
-  <!-- <section class="max-w-7xl mx-auto px-4 py-12">
-    <h2 class="text-3xl font-bold text-center mb-8">Featured Articles</h2>
-    <div class="relative w-full overflow-hidden">
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class=" bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-lg font-semibold mb-2">Breaking Tech Trends 2025</h3>
-          <p class="text-gray-600">Stay ahead with the latest tech developments.</p>
-        </div>
-        <div class=" bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-lg font-semibold mb-2">Startup Success Stories</h3>
-          <p class="text-gray-600">How entrepreneurs are changing the game.</p>
-        </div>
-      </div>
-    </div>
-  </section> -->
+
 
   <div class="container mx-auto p-4">
     <div class="grid grid-cols-1 lg:grid-cols-[70%_30%] gap-6">
       
       <!-- Left Content Section (60%) -->
-      <div class="group h-auto relative overflow-hidden shadow-lg bg-gray-100 p-6 rounded-lg">
+      <div class="group h-auto relative overflow-hidden shadow-lg bg-gray-100 p-6 ">
         
         <!-- Blog Categories Section -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           
           <!-- Lifestyle Column -->
-          <div class="col-span-1">
+          <div class="col-span-1 bg-gray-200 p-2">
             <div class="relative">
               <img src="https://images.unsplash.com/photo-1726064855757-ac8720008fe0?q=80&w=2070&auto=format&fit=crop" 
-                   alt="Lifestyle Image" class="w-full h-64 object-cover rounded-lg">
+                   alt="Lifestyle Image" class="w-full h-64 object-cover ">
               <div class="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black via-transparent to-transparent text-white">
                 <span class="bg-blue-500 text-xs px-2 py-1 rounded">LIFESTYLE</span>
                 <h2 class="text-lg font-bold">Cursus Commodo Cras Egestas</h2>
@@ -318,7 +285,7 @@
             <!-- Lifestyle Posts -->
             <div class="mt-4 space-y-4">
               <div class="flex gap-4 border-b pb-3" *ngFor="let post of getPostsByCategory('lifestyle')">
-                <img [src]="post.imageUrl" alt="Post" class="w-24 h-16 object-cover rounded-lg">
+                <img [src]="post.imageUrl" alt="Post" class="w-24 h-16 object-cover ">
                 <div>
                   <h3 class="font-semibold text-gray-800">{{ post.title }}</h3>
                   <p class="text-xs text-gray-500">{{ post.date }} / {{ post.author }} / {{ post.comments }} Comments</p>
@@ -328,10 +295,10 @@
           </div>
   
           <!-- Fashion Column -->
-          <div class="col-span-1">
+          <div class="col-span-1 bg-gray-200 p-2">
             <div class="relative">
               <img src="https://images.unsplash.com/photo-1740031904427-ca6713523372?q=80&w=2070&auto=format&fit=crop" 
-                   alt="Fashion Image" class="w-full h-64 object-cover rounded-lg">
+                   alt="Fashion Image" class="w-full h-64 object-cover ">
               <div class="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black via-transparent to-transparent text-white">
                 <span class="bg-pink-500 text-xs px-2 py-1 rounded">FASHION</span>
                 <h2 class="text-lg font-bold">Cras Nullam Commodo Parturient</h2>
@@ -342,7 +309,7 @@
             <!-- Fashion Posts -->
             <div class="mt-4 space-y-4">
               <div class="flex gap-4 border-b pb-3" *ngFor="let post of getPostsByCategory('fashion')">
-                <img [src]="post.imageUrl" alt="Post" class="w-24 h-16 object-cover rounded-lg">
+                <img [src]="post.imageUrl" alt="Post" class="w-24 h-16 object-cover ">
                 <div>
                   <h3 class="font-semibold text-gray-800">{{ post.title }}</h3>
                   <p class="text-xs text-gray-500">{{ post.date }} / {{ post.author }} / {{ post.comments }} Comments</p>
@@ -355,16 +322,16 @@
   
         <!-- Photography Section -->
         <div class="mt-8">
-          <div class="border-t-4 border-red-500 py-3 text-center text-gray-700 font-semibold uppercase">
+          <div class="border-t-4 border-red-500 py-3 text-center bg-gray-50 text-gray-700 font-semibold uppercase">
             Photography
           </div>
           
           <div class="md:flex gap-6 mt-4">
             <!-- Main Photography Post (Smaller) -->
-            <div class="bg-white p-3 shadow-md rounded-lg w-full md:w-1/2">
+            <div class="bg-white p-3 shadow-md  w-full md:w-1/2">
               <img src="https://images.unsplash.com/photo-1717501218037-2a88e2cbd2f6?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
                    alt="Photography" 
-                   class="w-full h-auto object-cover rounded-lg">
+                   class="w-full h-auto object-cover ">
               <h2 class="text-lg font-bold mt-2">Adipiscing Cras Tellus Euismod Ornare</h2>
           
               <!-- Star Ratings -->
@@ -384,7 +351,7 @@
             <!-- Side Photography Posts -->
             <div class="w-full md:w-1/2 space-y-4">
               <div class="flex gap-4 items-center border-b pb-3" *ngFor="let post of photographyPosts">
-                <img [src]="post.imageUrl" alt="Post" class="w-20 h-16 object-cover rounded-lg">
+                <img [src]="post.imageUrl" alt="Post" class="w-20 h-16 object-cover ">
                 <div>
                   <h3 class="font-semibold text-gray-800">{{ post.title }}</h3>
                   <p class="text-xs text-gray-500">{{ post.date }} / {{ post.author }}</p>
@@ -395,25 +362,173 @@
           
           
         </div>
+
+        <div class="w-full  py-8">
+          <div class="border-t-4 border-blue-600 py-3 text-center bg-gray-50 shadow-sm text-gray-800 font-semibold uppercase tracking-wide">
+            Health
+          </div>
+          
+          <div class=" mx-auto px-4 mt-6 relative overflow-hidden">
+            <!-- Carousel Wrapper -->
+            <div class="flex transition-transform duration-500 ease-in-out"
+                 [style.transform]="'translateX(-' + (currentIndex * slideWidth) + '%)'">
+              <div *ngFor="let slide of slides" class="flex-shrink-0" [style.width]="slideWidth + '%'">
+                <div class="px-2">
+                  <div class="w-40 bg-white shadow-md overflow-hidden transform transition-all duration-300 hover:shadow-xl">
+                    <img [src]="slide.img" [alt]="slide.text" class="w-40 h-32 object-cover">
+                    <div class="border-t border-slate-100">
+                      <p class="text-center py-3 px-4 text-gray-700 text-sm font-medium">{{ slide.text }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Navigation Buttons -->
+            <div class="absolute bottom-4 right-4 flex space-x-2">
+              <button
+                (click)="previousSlide()"
+                class="bg-white p-2.5 hover:bg-blue-50 transition-colors shadow-md border border-slate-100 group">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                     class="h-5 w-5 text-gray-600 group-hover:text-blue-600 transition-colors" 
+                     fill="none" 
+                     viewBox="0 0 24 24" 
+                     stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+    
+              <button
+                (click)="nextSlide()"
+                class="bg-white p-2.5 hover:bg-blue-50 transition-colors shadow-md border border-slate-100 group">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                     class="h-5 w-5 text-gray-600 group-hover:text-blue-600 transition-colors" 
+                     fill="none" 
+                     viewBox="0 0 24 24" 
+                     stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- techonology Column -->
+          <div class="col-span-1 bg-gray-200 p-2">
+            <div class="relative">
+              <img src="https://images.unsplash.com/photo-1616485828923-2640a1ee48b4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDY3fHhqUFI0aGxrQkdBfHxlbnwwfHx8fHw%3D" 
+                   alt="Lifestyle Image" class="w-full h-64 object-cover ">
+              <div class="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black via-transparent to-transparent text-white">
+                <span class="bg-green-500 text-xs px-2 py-1 rounded">TECHNOLOGY</span>
+                <h2 class="text-lg font-bold">Cursus Commodo Cras Egestas</h2>
+                <p class="text-sm">24 Jan 2015 / John Doe / 0 Comments</p>
+              </div>
+            </div>
   
+            <!-- Lifestyle Posts -->
+            <div class="mt-4 space-y-4">
+              <div class="flex gap-4 border-b pb-3" *ngFor="let post of getPostsByCategory('lifestyle')">
+                <img [src]="post.imageUrl" alt="Post" class="w-24 h-16 object-cover ">
+                <div>
+                  <h3 class="font-semibold text-gray-800">{{ post.title }}</h3>
+                  <p class="text-xs text-gray-500">{{ post.date }} / {{ post.author }} / {{ post.comments }} Comments</p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- sports Column -->
+          <div class="col-span-1 bg-gray-200 p-2">
+            <div class="relative">
+              <img src="https://images.unsplash.com/photo-1739550635585-484633b21450?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE4fEJuLURqcmNCcndvfHxlbnwwfHx8fHw%3D" 
+                   alt="Fashion Image" class="w-full h-64 object-cover ">
+              <div class="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black via-transparent to-transparent text-white">
+                <span class="bg-blue-500 text-xs px-2 py-1 rounded">SPORTS</span>
+                <h2 class="text-lg font-bold">Cras Nullam Commodo Parturient</h2>
+                <p class="text-sm">24 Jan 2015 / John Doe / 0 Comments</p>
+              </div>
+            </div>
+  
+            <!-- Fashion Posts -->
+            <div class="mt-4 space-y-4">
+              <div class="flex gap-4 border-b pb-3" *ngFor="let post of getPostsByCategory('fashion')">
+                <img [src]="post.imageUrl" alt="Post" class="w-24 h-16 object-cover ">
+                <div>
+                  <h3 class="font-semibold text-gray-800">{{ post.title }}</h3>
+                  <p class="text-xs text-gray-500">{{ post.date }} / {{ post.author }} / {{ post.comments }} Comments</p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+
+        <div class="w-full p-4 mt-3">
+          <div class="bg-gray-100 p-4  shadow-lg w-[80%] text-gray-900">
+            <h2 class="text-lg font-bold">Advertise Here</h2>
+            <p class="text-sm mt-2">Your ad can be displayed here. Contact us for details.</p>
+            <button class="mt-3 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 ">
+              Contact Us
+            </button>
+          </div>
+        </div>
+  
+        <div class="w-full py-8">
+          <!-- Section Title -->
+          <div class="border-t-4 border-green-600 py-3 text-center bg-gray-50 shadow-sm text-gray-800 font-semibold uppercase tracking-wide">
+            Entertainment
+          </div>
+        
+          <!-- Card Container -->
+          <a href="#" class="flex flex-col md:flex-row items-center w-full bg-white border border-gray-200  shadow-md hover:shadow-lg hover:scale-[1.02] transition-transform duration-300">
+            
+            <!-- Image Section -->
+            <img class="object-cover w-full md:w-1/3 h-auto md:h-auto " 
+                 src="https://images.unsplash.com/photo-1580712987356-934561958705?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGVudGVybmV0ZW50fGVufDB8fDB8fHww%3D%3D" 
+                 alt="Technology Acquisitions">
+            
+            <!-- Text Content -->
+            <div class="flex flex-col justify-between p-6 w-full md:w-2/3">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                Noteworthy Tech Acquisitions 2021
+              </h5>
+              <p class="mb-4 text-gray-600 text-base leading-relaxed">
+                The biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+              </p>
+              
+              <!-- Read More Button -->
+              <button class="mt-auto text-indigo-600 font-medium hover:underline flex items-center gap-1">
+                Read More 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </a>
+        </div>
+        
       </div>
   
       <!-- Right Sidebar Section (40%) -->
-      <div class="group h-auto relative overflow-hidden shadow-lg bg-gray-50 p-6 rounded-lg">
+      <div class="group h-auto relative overflow-hidden shadow-lg bg-gray-50 p-6 ">
         
         <!-- Sidebar Advertisement -->
-        <div class="border p-4 text-center rounded-lg shadow-sm">
+        <div class="border p-4 text-center  shadow-sm">
           <h3 class="text-xl font-bold text-yellow-500">URBANMAG</h3>
           <p class="text-gray-500">Magazine WordPress Theme</p>
           <img src="https://source.unsplash.com/300x200/?advertisement" 
-               alt="Ad Banner" class="w-full mt-2 rounded-lg">
+               alt="Ad Banner" class="w-full mt-2 ">
         </div>
   
         <!-- Popular Posts -->
         <div class="mt-6">
-          <h3 class="text-lg font-bold border-b-2 pb-2">Popular Posts</h3>
+          <div class="mt-6 bg-black text-yellow-400 text-center py-2 font-semibold uppercase">
+            Popular Posts
+          </div>
           <div class="flex gap-4 mt-4 border-b pb-3" *ngFor="let post of trendingPosts">
-            <img [src]="post.imageUrl" alt="Popular Post" class="w-16 h-12 object-cover rounded-lg">
+            <img [src]="post.imageUrl" alt="Popular Post" class="w-16 h-12 object-cover ">
             <div>
               <h3 class="text-sm font-semibold text-gray-800">{{ post.title }}</h3>
               <p class="text-xs text-gray-500">{{ post.comments }} Comments / {{ post.date }}</p>
@@ -448,75 +563,9 @@
   
   
 
-  <section class="bg-gray-900 text-white py-16">
-    <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8">Editor's Picks</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white text-gray-900 p-6 rounded-lg shadow-lg">
-          <h3 class="text-lg font-semibold">The Future of AI</h3>
-          <p class="text-gray-600">An in-depth look at where artificial intelligence is headed.</p>
-        </div>
-        <div class="bg-white text-gray-900 p-6 rounded-lg shadow-lg">
-          <h3 class="text-lg font-semibold">Minimalist Lifestyle</h3>
-          <p class="text-gray-600">How simplifying your life can bring more happiness.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
 
-    <!-- Testimonials -->
-    <section class="max-w-7xl mx-auto px-4 py-12">
-      <h2 class="text-3xl font-bold text-center mb-8">What Our Readers Say</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="p-6 bg-white rounded-lg shadow-lg">
-          <p class="text-gray-600 italic">"I love the in-depth coverage and insightful articles!"</p>
-          <span class="block mt-4 font-semibold">- Sarah Williams</span>
-        </div>
-        <div class="p-6 bg-white rounded-lg shadow-lg">
-          <p class="text-gray-600 italic">"A must-read for anyone looking to stay informed."</p>
-          <span class="block mt-4 font-semibold">- Mark Johnson</span>
-        </div>
-      </div>
-    </section>
 
-      <!-- FAQ Section -->
-  <section class="bg-gray-100 py-16">
-    <div class="max-w-5xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
-      <details class="bg-white p-4 rounded-lg shadow-lg mb-4">
-        <summary class="font-semibold cursor-pointer">How often are new magazines released?</summary>
-        <p class="text-gray-600 mt-2">We release new editions every month.</p>
-      </details>
-      <details class="bg-white p-4 rounded-lg shadow-lg">
-        <summary class="font-semibold cursor-pointer">Can I cancel my subscription anytime?</summary>
-        <p class="text-gray-600 mt-2">Yes, you can cancel your subscription at any time.</p>
-      </details>
-    </div>
-  </section>
-
-  <!-- Subscription Section -->
-  <section class="bg-gradient-to-r from-indigo-700 to-purple-600 text-white py-16">
-    <div class="max-w-4xl mx-auto text-center px-6">
-      <h2 class="text-4xl font-bold mb-4 sm:text-5xl">Stay Informed, Subscribe Today</h2>
-      <p class="text-lg sm:text-xl mb-6 opacity-90">
-        Get the latest updates and exclusive content delivered straight to your inbox.
-      </p>
-      
-      <form class="max-w-lg mx-auto flex flex-col sm:flex-row items-center bg-white shadow-lg rounded-full overflow-hidden border border-gray-300">
-        <input 
-          type="email" 
-          placeholder="Enter your email" 
-          class="flex-grow px-6 py-4 text-gray-800 bg-transparent focus:outline-none focus:ring-2 focus:ring-indigo-500"
-        >
-        <button class="bg-indigo-600 text-white px-6 py-4 font-semibold hover:bg-indigo-700 transition w-full sm:w-auto">
-          Subscribe
-        </button>
-      </form>
-
-    </div>
-  </section>
-  
 
   <!-- Footer -->
   <footer class="bg-gray-900 text-white py-12">

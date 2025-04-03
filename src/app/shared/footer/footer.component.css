@@ -1,0 +1,14 @@
+img.x-logo {
+    background-color: white; /* White background for better visibility */
+    padding: 4px; /* Increased padding for better spacing */
+    border-radius: 50%; /* Circular shape to match other social icons */
+    width: 30px; /* Adjust size */
+    height: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+  }
+  
+  img.x-logo:hover {
+    transform: scale(1.1); /* Slight enlargement on hover */
+  }
+  

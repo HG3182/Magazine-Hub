@@ -1,0 +1,194 @@
+  <!-- top navbar -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav class="bg-black text-white p-4 shadow-lg">
+      <div class="container mx-auto flex flex-wrap justify-between items-center">
+        <!-- Navigation Links -->
+        <ul class="w-full md:w-auto flex flex-wrap justify-center md:justify-start space-x-6 text-sm mb-2 md:mb-0">
+          <li><a href="#" class="hover:text-red-600">Home</a></li>
+          <li><a href="#" class="hover:text-red-600">Advertisement</a></li>
+          <li><a href="#" class="hover:text-red-600">News</a></li>
+          <li><a href="#" class="hover:text-red-600">Contact</a></li>
+        </ul>
+  
+        <!-- Social Icons -->
+        <div class="w-full md:w-auto flex justify-center md:justify-start space-x-6">
+            <a href="https://www.instagram.com/cioexcellence/" class="text-red-600 hover:text-white transition duration-300">
+              <!-- Instagram -->
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm8 2h2c1.7 0 3 1.3 3 3v2h-2V7c0-.6-.4-1-1-1h-2V4zm-3 3c2.2 0 4 1.8 4 4s-1.8 4-4 4-4-1.8-4-4 1.8-4 4-4zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-7 8v2c0 1.7 1.3 3 3 3h2v-2H7c-.6 0-1-.4-1-1v-2H4z"/>
+              </svg>
+            </a>
+          
+            <a href="https://www.linkedin.com/company/cio-excellence/?viewAsMember=true" class="text-red-600 hover:text-white transition duration-300">
+              <!-- LinkedIn -->
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M4 3C4 1.9 4.9 1 6 1s2 .9 2 2-1 2-2 2-2-.9-2-2zM2 6h4v12H2V6zm6 0h4v2.5h.1c.8-1.4 2.8-2.5 4.9-2.5 5.3 0 6.3 3.5 6.3 8V18h-4v-6c0-1.6 0-3.5-2.5-3.5S12 10 12 12v6H8V6z"/>
+              </svg>
+            </a>
+          
+            <a href="https://x.com/cioexcellence" class="text-red-600 hover:text-white transition duration-300">
+              <!-- X (Twitter) -->
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22 3c-.8.4-1.6.6-2.4.7A4.1 4.1 0 0021.3 2a8.2 8.2 0 01-2.6 1 4.2 4.2 0 00-7.2 3v1c-3.5-.2-6.6-1.8-8.7-4.3A4.3 4.3 0 001.5 6a4.2 4.2 0 001.8 3.6A4 4 0 012 9v.1a4.2 4.2 0 003.4 4 4 4 0 01-1.9.1 4.2 4.2 0 003.9 2.9A8.4 8.4 0 010 18a12 12 0 006.3 1.8c7.5 0 11.6-6.2 11.6-11.6V7a8 8 0 002-2z"/>
+              </svg>
+            </a>
+          
+            <a href="https://www.facebook.com/profile.php?id=61564075779278" class="text-red-600 hover:text-white transition duration-300">
+              <!-- Facebook -->
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22 12c0-5.5-4.5-10-10-10S2 6.5 2 12c0 4.7 3.3 8.6 7.6 9.7v-6.8H7V12h2.6V9.4c0-2.6 1.6-4 3.8-4 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.3 0-1.7.8-1.7 1.6V12H16l-.4 2.9h-2.3v6.8C18.7 20.6 22 16.7 22 12z"/>
+              </svg>
+            </a>
+          </div>
+          
+      </div>
+    </nav>
+  </div>
+  
+    
+    
+  <hr class="border-t border-gray-200">
+    <!-- banner -->
+    <section class="w-full bg-white text-black">
+      <div class="container mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left">
+    
+        <!-- Left Side - Logo -->
+        <div class="w-full md:w-1/2 flex justify-center p-4">
+            <img src="../../../assets/DATA/Logo/Black Logo.png" alt="Magazine Hub Logo" class="h-12 md:h-16" />
+          </div>
+          
+    
+
+
+        <div class="w-full md:w-1/2 flex justify-center p-4">
+            <a href="contact-us.html" class="w-[100%]">
+              <img src="../../../assets/DATA/MockupsandBannerAd/1400x361.jpg" alt="Advertise Here" class="w-[100%] shadow-lg">
+            </a>
+          </div>
+          
+          
+    
+      </div>
+    </section>
+  
+    <hr class="border-t border-gray-200">
+  
+    <!-- Navigation -->
+    <nav class="bg-[#02150e] text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16">
+            
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+              <button 
+                (click)="toggleMobileMenu()"
+                class="text-white hover:text-gray-300 focus:outline-none"
+              >
+                <svg *ngIf="!isMobileMenuOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg *ngIf="isMobileMenuOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+      
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex flex-1 items-center justify-between">
+              <div class="flex space-x-4">
+                <div *ngFor="let item of menuItems" class="relative group">
+                  <button class="flex items-center space-x-1 px-4 py-2 text-white group-hover:bg-red-500 group-hover:text-white active:bg-red-700 transition-all duration-200 ease-in-out">
+                    <span class="font-medium">{{ item.name }}</span>
+                    <svg *ngIf="item.hasSubmenu" xmlns="http://www.w3.org/2000/svg" 
+                         class="h-4 w-4 transform group-hover:rotate-180 transition-transform duration-200" 
+                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <!-- Submenu -->
+                  <div *ngIf="item.hasSubmenu" 
+                       class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-xl opacity-0 invisible 
+                              group-hover:opacity-100 group-hover:visible transition-all duration-200 
+                              transform group-hover:translate-y-0 translate-y-1 z-50">
+                    <div class="py-1">
+                      <a *ngFor="let subItem of item.submenuItems" 
+                         href="#" 
+                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-red-500 hover:text-white 
+                                active:bg-red-700 transition-colors duration-150">
+                        {{ subItem }}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Search Button -->
+              <div class="relative">
+                <button
+                  (click)="toggleSearch()"
+                  class="p-2 text-white hover:bg-red-500 hover:text-white rounded-full 
+                         transition-all duration-200 ease-in-out"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </button>
+                <!-- Search Overlay -->
+                <div *ngIf="isSearchOpen" 
+                     class="absolute right-0 mt-2 w-72 bg-white shadow-xl p-4 z-50 
+                            transform transition-all duration-200 ease-in-out">
+                  <div class="relative">
+                    <input
+                      type="search"
+                      placeholder="Search..."
+                      class="w-full px-4 py-2 border border-gray-300  
+                             focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 
+                             transition-all duration-200"
+                    />
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 absolute right-3 top-2.5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Mobile Menu -->
+<div *ngIf="isMobileMenuOpen" class="md:hidden py-4 space-y-1">
+  <div *ngFor="let item of menuItems" class="block">
+    <button 
+      (click)="item.hasSubmenu ? toggleSubMenu(item.name) : null" 
+      class="w-full text-left px-4 py-2 text-white hover:bg-red-500 hover:text-white rounded-md transition-all duration-200 flex items-center justify-between">
+      <span>{{ item.name }}</span>
+      <svg *ngIf="item.hasSubmenu" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform transition-transform duration-200"
+           [class.rotate-180]="openSubmenu === item.name">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+
+    <!-- Submenu for Mobile -->
+    <div *ngIf="openSubmenu === item.name" class="ml-4 space-y-1 bg-gray-800 p-2 rounded">
+      <a *ngFor="let subItem of item.submenuItems" 
+         href="#" 
+         class="block px-4 py-2 text-sm text-gray-300 hover:bg-red-500 hover:text-white">
+        {{ subItem }}
+      </a>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </nav>
+      
+
+              <!-- Right Side - Ad Section (Moves below on small screens) -->
+        <!-- <div class="w-full md:w-1/2 flex justify-center p-4">
+          <div class="bg-gray-100 p-4  shadow-lg w-[80%] text-gray-900">
+            <h2 class="text-lg font-bold">Advertise Here</h2>
+            <p class="text-sm mt-2">Your ad can be displayed here. Contact us for details.</p>
+            <button class="mt-3 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 ">
+              Contact Us
+            </button>
+          </div>
+        </div> -->
